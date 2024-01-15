@@ -33,7 +33,7 @@ public class Cliente {
     private List<Pedido> pedidos;
 
     @OneToOne
-    @JoinColumn (name = "id")
+    @JoinColumn (name = "enderecoId")
     @JsonManagedReference
     private Endereco endereco;
 

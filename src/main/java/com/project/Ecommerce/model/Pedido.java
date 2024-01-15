@@ -13,6 +13,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 @Entity
@@ -30,6 +31,7 @@ public class Pedido {
     @JsonManagedReference
     private Cliente cliente;
 
+    @OneToMany(mappedBy = "pedido")
     private List<Produto> produtos;
 
     private BigDecimal descontoNoTotal;
