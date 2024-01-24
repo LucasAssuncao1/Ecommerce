@@ -1,4 +1,4 @@
-package com.project.Ecommerce.model;
+package com.project.ecommerce.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 

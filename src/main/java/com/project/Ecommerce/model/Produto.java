@@ -1,4 +1,4 @@
-package com.project.Ecommerce.model;
+package com.project.ecommerce.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

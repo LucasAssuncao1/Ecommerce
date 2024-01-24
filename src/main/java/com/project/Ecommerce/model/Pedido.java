@@ -1,9 +1,10 @@
-package com.project.Ecommerce.model;
+package com.project.ecommerce.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.Column;
@@ -28,7 +29,8 @@ public class Pedido {
 
     @ManyToOne
     @JoinColumn(name = "clienteId")
-    @JsonManagedReference
+    // @JsonManagedReference
+    // @JsonBackReference
     private Cliente cliente;
 
     @OneToMany(mappedBy = "pedido")
