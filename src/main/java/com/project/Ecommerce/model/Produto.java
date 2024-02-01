@@ -31,5 +31,8 @@ public class Produto {
     private BigDecimal valorVenda;
     private LocalDate dataCadastro;
     private String observacao;
+
+
+    
     
 }

@@ -63,7 +63,7 @@ public class PedidoService {
         // Pedido.setEmail(request.getEmail());
         // Pedido.setEndereco(request.getEndereco());
 
-        return converter.map(this.salvar(Pedido), PedidoResponse.class);
+        return converter.map(this.salvar(pedido), PedidoResponse.class);
     }
 
     public Pedido salvar (Pedido Pedido){
